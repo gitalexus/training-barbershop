@@ -1,3 +1,247 @@
+
+/* PT Sans */
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Regular.woff2') format('embedded-opentype'),
+     url('../fonts/PTSans-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Bold.woff2') format('embedded-opentype'),
+     url('../fonts/PTSans-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-Italic.woff2') format('embedded-opentype'),
+     url('../fonts/PTSans-Italic.woff') format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/PTSans-BoldItalic.woff2') format('embedded-opentype'),
+     url('../fonts/PTSans-BoldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* PT Sans Narrow */
+
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: 
+     url('../fonts/PTSansNarrow-Regular.woff2') format('woff2'),
+     url('../fonts/PTSansNarrow-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PT Sans Narrow';
+  src: 
+     url('../fonts/PTSansNarrow-Bold.woff2') format('woff2'),
+     url('../fonts/PTSansNarrow-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* normalyze */
+*, 
+*::before, 
+*::after {
+  box-sizing: border-box;
+}
+
+/* base styles */
 body {
-  background-color: tomato;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #000000;
+  color: #ffffff;
+  background-image: url("../images/background.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+/* common */
+.title {
+  font-family: PT Sans Narrow;
+  font-size: 32px;
+  line-height: 110%;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-light {
+  color: #242424;  
+  background-color: #ffffff;
+}
+
+/* header */
+
+.page-header {
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.navigation-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* преимущества */
+
+.advantages-item {
+  text-align: center;
+}
+.advantages-title {
+  font-family: PT Sans Narrow;
+  font-size: 32px;
+  line-height: 110%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.index-columns {
+  color: #242424;
+  background-color: #fbf7f4;
+  background-image: url("../images/pattern.png");  
+}
+
+/* услуги */
+
+.services-item {
+  font-family: PT Sans Narrow;
+  font-size: 20px;
+  line-height: 140%;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.services-price {
+  color: #af7842;
+}
+
+/* контакты */
+
+.contacts {
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contacts-subtitle {
+  color: #af7842;
+  font-family: PT Sans Narrow;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contacts-address{
+  font-style: normal;
+}
+
+.contacts-phone {
+  color: #242424;
+  font-family: PT Sans Narrow;
+  font-size: 24px;
+  line-height: 120%;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* форма записи */
+
+.appointment-text {
+  color: #595959;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.form-label {
+  color: var(--basic-extra-dark, #242424);
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+/* footer */
+
+.about-text {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.page-footer a {
+  color: #ffffff;
+}
+
+.footer-contacts-address-phone {
+  font-size: 20px;
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.footer-contact-map-link {
+  font-size: 20px;
+  font-family: PT Sans Narrow;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.page-footer-title {
+  font-size: 20px;
+  font-family: PT Sans Narrow;
+  line-height: 140%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.page-footer-title {
+  font-size: 20px;
+  font-family: PT Sans Narrow;
+  line-height: 140%;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+.page-footer .htmlacademy-link {
+  color: #DBB590;
 }
