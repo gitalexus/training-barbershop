@@ -38,7 +38,7 @@
 
 @font-face {
   font-family: 'PT Sans Narrow';
-  src: 
+  src:
      url('../fonts/PTSansNarrow-Regular.woff2') format('woff2'),
      url('../fonts/PTSansNarrow-Regular.woff') format('woff');
   font-style: normal;
@@ -47,7 +47,7 @@
 }
 @font-face {
   font-family: 'PT Sans Narrow';
-  src: 
+  src:
      url('../fonts/PTSansNarrow-Bold.woff2') format('woff2'),
      url('../fonts/PTSansNarrow-Bold.woff') format('woff');
   font-style: normal;
@@ -56,8 +56,8 @@
 }
 
 /* normalyze */
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -71,9 +71,16 @@ body {
   font-style: normal;
   background-color: #000000;
   color: #ffffff;
+}
+
+.main-index {
   background-image: url("../images/background.jpg");
-  background-size: 100%;
+  background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.main-inner {
+
 }
 
 /* common */
@@ -89,6 +96,7 @@ body {
 .button {
   background-color: #000000;
   color: #ffffff;
+  font-size: 16px;
   font-weight: 700;
   line-height: 100%;
   text-transform: uppercase;
@@ -96,7 +104,7 @@ body {
 }
 
 .button-light {
-  color: #242424;  
+  color: #242424;
   background-color: #ffffff;
 }
 
@@ -130,7 +138,7 @@ body {
 .index-columns {
   color: #242424;
   background-color: #fbf7f4;
-  background-image: url("../images/pattern.png");  
+  background-image: url("../images/pattern.png");
 }
 
 /* услуги */
@@ -192,7 +200,12 @@ body {
   text-transform: uppercase;
 }
 
-/* footer */
+/* page-footer */
+
+.page-footer {
+  background-color: #242424;
+  background-image: url("../images/pattern.png");
+}
 
 .about-text {
   font-size: 14px;
@@ -244,4 +257,67 @@ body {
 
 .page-footer .htmlacademy-link {
   color: #DBB590;
+}
+
+/* catalo styles */
+
+.main-inner {
+  color: #242424;
+  background-color: #FBF7F4;
+  background-image: url("../images/pattern.png");
+}
+
+.breadcrumbs-link {
+  color: #242424;
+  line-height: 140%;
+}
+
+.catalog-filter {
+  font-weight: 700;
+  line-height: 140%;
+}
+
+.catalog-filter-title {
+  font-family: PT Sans Narrow;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.product-card {
+  background: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-card-price {
+  color: #814b18;
+  font-family: PT Sans Narrow;
+  font-size: 24px;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
+.pagination-link-disabled {
+  background-color: #595959;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #ffffff;
 }
